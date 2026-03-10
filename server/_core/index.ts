@@ -1,34 +1,5 @@
-import "dotenv/config";
-import contactRoutes from '../routes/contact.js';
-import express from "express";
-import { createServer } from "http";
-import net from "net";
-import { createExpressMiddleware } from "@trpc/server/adapters/express";
-import { registerOAuthRoutes } from "./oauth";
-import { appRouter } from "../routers";
-import { createContext } from "./context";
-import { serveStatic, setupVite } from "./vite";
-
-function isPortAvailable(port: number): Promise<boolean> {
-  return new Promise(resolve => {
-    const server = net.createServer();
-    server.listen(port, () => {
-      server.close(() => resolve(true));
-    });
-    server.on("error", () => resolve(false));
-  });
-}
-const app = express();
-app.use(express.json());
-app.use('/', contactRoutes); 
-async function findAvailablePort(startPort: number = 3000): Promise<number> {
-  for (let port = startPort; port < startPort + 20; port++) {
-    if (await isPortAvailable(port)) {
-      return port;
-    }
-  }
-  throw new Error(`No available port found starting from ${startPort}`);
-import "dotenv/config";
+import dotenv from 'dotenv';
+dotenv.config();
 import contactRoutes from '../routes/contact.js';
 import express from "express";
 import { createServer } from "http";
@@ -58,7 +29,7 @@ async function findAvailablePort(startPort: number = 3000): Promise<number> {
   throw new Error("No available ports found");
 }
 
-const app = express();
+const app = express();  
 app.use(express.json());
 app.use('/', contactRoutes);
 
@@ -75,7 +46,7 @@ async function startServer() {
   try {
     const port = await findAvailablePort(10000);
     const server = createServer(app);
-
+    
     // Setup Vite or static serving
     if (process.env.NODE_ENV === 'production') {
       serveStatic(app);
@@ -94,8 +65,9 @@ async function startServer() {
   }
 }
 
-// Start the server
-if (require.main === module) {
+// Start the server (ES Module way)
+const isMainModule = import.meta.url === `file://${process.argv[1]}`;
+if (isMainModule) {
   startServer();
 }
 

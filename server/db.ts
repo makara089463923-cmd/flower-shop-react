@@ -22,8 +22,16 @@ export async function getDb() {
   return _db;
 }
 
-// Export db variable សម្រាប់ប្រើក្នុង files ផ្សេងទៀត (តែម្តងគត់)
-export const db = _db;
+// Function សម្រាប់ប្រើក្នុង routes ដែលត្រូវការ db connection
+export async function getDbConnection() {
+  const db = await getDb();
+  if (!db) {
+    throw new Error("Database not connected");
+  }
+  return db;
+}
+
+// លុបបន្ទាត់ export const db = _db; ចេញ
 
 export async function upsertUser(user: InsertUser): Promise<void> {
   if (!user.openId) {

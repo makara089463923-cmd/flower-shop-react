@@ -1,12 +1,13 @@
 import express from 'express';
-import { getDbConnection } from '../db';
+import { getDbConnection } from '../db';  // ប្តូរ import
 import { contacts } from '../../shared/schema';
+import { eq } from 'drizzle-orm';
 
 const router = express.Router();
 
 router.post('/api/contact', async (req, res) => {
   try {
-    const db = await getDbConnection();
+    const db = await getDbConnection();  // ប្រើ function ថ្មី
     const { name, phone, email, address, message, productId } = req.body;
 
     if (!name || !phone) {

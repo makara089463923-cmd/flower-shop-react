@@ -40,52 +40,52 @@ import React, { useState } from "react";
 const images = [
   {
     id: 1,
-    src: "https://images.unsplash.com/photo-1490750967868-88df5691cc7a?w=400&h=400&fit=crop",
+    src: "https://images.unsplash.com/photo-1490750967868-88df5691cc7a?w=200&h=200&fit=crop&q=60",
     alt: "ផ្កា",
   },
   {
     id: 2,
-    src: "https://images.unsplash.com/photo-1508193638397-1c4234db14d8?w=400&h=400&fit=crop",
+    src: "https://images.unsplash.com/photo-1508193638397-1c4234db14d8?w=200&h=200&fit=crop&q=60",
     alt: "ផ្កា",
   },
   {
     id: 3,
-    src: "https://images.unsplash.com/photo-1487530811015-780bfbff8e1e?w=400&h=400&fit=crop",
+    src: "https://images.unsplash.com/photo-1487530811015-780bfbff8e1e?w=200&h=200&fit=crop&q=60",
     alt: "ផ្កា",
   },
   {
     id: 4,
-    src: "https://images.unsplash.com/photo-1455659817273-f96807779a8a?w=400&h=400&fit=crop",
+    src: "https://images.unsplash.com/photo-1455659817273-f96807779a8a?w=200&h=200&fit=crop&q=60",
     alt: "ផ្កា",
   },
   {
     id: 5,
-    src: "https://images.unsplash.com/photo-1468327768560-75b778cbb551?w=400&h=400&fit=crop",
+    src: "https://images.unsplash.com/photo-1468327768560-75b778cbb551?w=200&h=200&fit=crop&q=60",
     alt: "ផ្កា",
   },
   {
     id: 6,
-    src: "https://images.unsplash.com/photo-1501004318641-b39e6451bec6?w=400&h=400&fit=crop",
+    src: "https://images.unsplash.com/photo-1501004318641-b39e6451bec6?w=200&h=200&fit=crop&q=60",
     alt: "ផ្កា",
   },
   {
     id: 7,
-    src: "https://images.unsplash.com/photo-1548460784-f2c4a5af0a4d?w=400&h=400&fit=crop",
+    src: "https://images.unsplash.com/photo-1548460784-f2c4a5af0a4d?w=200&h=200&fit=crop&q=60",
     alt: "ផ្កា",
   },
   {
     id: 8,
-    src: "https://images.unsplash.com/photo-1444021465936-c6ca81d39b84?w=400&h=400&fit=crop",
+    src: "https://images.unsplash.com/photo-1444021465936-c6ca81d39b84?w=200&h=200&fit=crop&q=60",
     alt: "ផ្កា",
   },
   {
     id: 9,
-    src: "https://images.unsplash.com/photo-1477420140578-8e964ad05f5c?w=400&h=400&fit=crop",
+    src: "https://images.unsplash.com/photo-1477420140578-8e964ad05f5c?w=200&h=200&fit=crop&q=60",
     alt: "ផ្កា",
   },
   {
     id: 10,
-    src: "https://images.unsplash.com/photo-1520763185298-1b434c919102?w=400&h=400&fit=crop",
+    src: "https://images.unsplash.com/photo-1520763185298-1b434c919102?w=200&h=200&fit=crop&q=60",
     alt: "ផ្កា",
   },
 ];

@@ -35,6 +35,7 @@
 //     </section>
 //   );
 // }
+
 import React, { useState } from "react";
 
 const images = [

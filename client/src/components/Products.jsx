@@ -64,6 +64,57 @@
 
 import React, { useState } from "react";
 
+import roseImg from "/src/assets/images/flowers/rose.jpg";
+import sunflowerImg from "/src/assets/images/flowers/sunflower.jpg";
+import lilyImg from "/src/assets/images/flowers/lily.jpg";
+import lavenderImg from "/src/assets/images/flowers/lavender.jpg";
+import tulipImg from "/src/assets/images/flowers/tulip.jpg";
+import daisyImg from "/src/assets/images/flowers/daisy.jpg";
+import cherryBlossomImg from "/src/assets/images/flowers/cherry-blossom.jpg";
+import marigoldImg from "/src/assets/images/flowers/marigold.jpg";
+import hydrangeaImg from "/src/assets/images/flowers/hydrangea.jpg";
+import carnationImg from "/src/assets/images/flowers/carnation.jpg";
+import orchidImg from "/src/assets/images/flowers/orchid.jpg";
+import daffodilImg from "/src/assets/images/flowers/daffodil.jpg";
+import peonyImg from "/src/assets/images/flowers/peony.jpg";
+import irisImg from "/src/assets/images/flowers/iris.jpg";
+import bouquetImg from "/src/assets/images/flowers/bouquet.jpg";
+import jasmineImg from "/src/assets/images/flowers/jasmine.jpg";
+import poppyImg from "/src/assets/images/flowers/poppy.jpg";
+import gerberaImg from "/src/assets/images/flowers/gerbera.jpg";
+import forgetMeNotImg from "/src/assets/images/flowers/forget-me-not.jpg";
+import tigerLilyImg from "/src/assets/images/flowers/tiger-lily.jpg";
+import wisteriaImg from "/src/assets/images/flowers/wisteria.jpg";
+import roseGardenImg from "/src/assets/images/flowers/rose-garden.jpg";
+import sunflowerCrownImg from "/src/assets/images/flowers/sunflower-crown.jpg";
+import magnoliaImg from "/src/assets/images/flowers/magnolia.jpg";
+import anthuriumImg from "/src/assets/images/flowers/anthurium.jpg";
+import camelliaImg from "/src/assets/images/flowers/camellia.jpg";
+import mimosaImg from "/src/assets/images/flowers/mimosa.jpg";
+import delphiniumImg from "/src/assets/images/flowers/delphinium.jpg";
+import begoniaImg from "/src/assets/images/flowers/begonia.jpg";
+import gardeniaImg from "/src/assets/images/flowers/gardenia.jpg";
+import azaleaImg from "/src/assets/images/flowers/azalea.jpg";
+import alliumImg from "/src/assets/images/flowers/allium.jpg";
+import ranunculusImg from "/src/assets/images/flowers/ranunculus.jpg";
+import geraniumImg from "/src/assets/images/flowers/geranium.jpg";
+import cyclamenImg from "/src/assets/images/flowers/cyclamen.jpg";
+import agapanthusImg from "/src/assets/images/flowers/agapanthus.jpg";
+import zinniaImg from "/src/assets/images/flowers/zinnia.jpg";
+import freesiaImg from "/src/assets/images/flowers/freesia.jpg";
+import lisianthusImg from "/src/assets/images/flowers/lisianthus.jpg";
+import staticeImg from "/src/assets/images/flowers/statice.jpg";
+import sunflowerFieldImg from "/src/assets/images/flowers/sunflower-field.jpg";
+import amaryllisImg from "/src/assets/images/flowers/amaryllis.jpg";
+import sweetPeaImg from "/src/assets/images/flowers/sweet-pea.jpg";
+import cornflowerImg from "/src/assets/images/flowers/cornflower.jpg";
+import proteaImg from "/src/assets/images/flowers/protea.jpg";
+import stephanotisImg from "/src/assets/images/flowers/stephanotis.jpg";
+import cosmosImg from "/src/assets/images/flowers/cosmos.jpg";
+import bougainvilleaImg from "/src/assets/images/flowers/bougainvillea.jpg";
+import chrysanthemumImg from "/src/assets/images/flowers/chrysanthemum.jpg";
+import royalRoseImg from "/src/assets/images/flowers/royal-rose.jpg";
+
 const flowerProducts = [
   {
     id: 1,
